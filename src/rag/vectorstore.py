@@ -50,17 +50,22 @@ def build_vectorstore():
 
     return vectorstore
 
+VECTORSTORE = None
 
 def load_vectorstore():
+    """
+    Load the Chroma vector database only once.
+    """
 
-    embedder = get_embedder()
+    global VECTORSTORE
 
-    return Chroma(
-        persist_directory=PERSIST_DIR,
-        embedding_function=embedder,
-    )
+    if VECTORSTORE is None:
 
+        embedder = get_embedder()
 
-if __name__ == "__main__":
+        VECTORSTORE = Chroma(
+            persist_directory=PERSIST_DIR,
+            embedding_function=embedder,
+        )
 
-    build_vectorstore()
+    return VECTORSTORE

@@ -1,2 +1,6 @@
 requests
 beautifulsoup4
+langchain
+langchain-community
+chromadb
+sentence-transformers

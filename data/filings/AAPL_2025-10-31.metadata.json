@@ -1,0 +1,14 @@
+{
+    "pipeline_version": "1.0",
+    "ticker": "AAPL",
+    "cik": "0000320193",
+    "form": "10-K",
+    "filingDate": "2025-10-31",
+    "downloaded_at": "2026-07-15T23:30:37.342173",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+    "characters": 205426,
+    "words": 30958,
+    "paragraphs": 723,
+    "raw_html": "data\\filings\\AAPL_2025-10-31.html",
+    "clean_text": "data\\filings\\AAPL_2025-10-31.txt"
+}

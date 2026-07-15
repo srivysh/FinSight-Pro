@@ -1,0 +1,14 @@
+{
+    "pipeline_version": "1.0",
+    "ticker": "MSFT",
+    "cik": "0000789019",
+    "form": "10-K",
+    "filingDate": "2025-07-30",
+    "downloaded_at": "2026-07-15T23:30:41.344722",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+    "characters": 317872,
+    "words": 47585,
+    "paragraphs": 4517,
+    "raw_html": "data\\filings\\MSFT_2025-07-30.html",
+    "clean_text": "data\\filings\\MSFT_2025-07-30.txt"
+}

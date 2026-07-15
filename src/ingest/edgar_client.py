@@ -226,10 +226,15 @@ def download_and_clean(
         tag.decompose()
 
     # Tables
-    tags = soup.find_all("table")
-    removed["tables"] = len(tags)
-    for tag in tags:
-        tag.decompose()
+    # Tables
+#
+# Financial tables contain important information such as revenue,
+# balance sheet values, EPS, and cash flow. Keep them for the RAG system.
+#
+# (We no longer remove tables.)
+
+    removed["tables"] = len(soup.find_all("table"))
+    logger.info("Keeping %d tables for financial data extraction.", removed["tables"])
 
     # SVG
     tags = soup.find_all("svg")

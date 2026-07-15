@@ -1,7 +1,7 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pathlib import Path
 
-def chunk_filing(filepath: str, chunk_size=800, overlap=120):
+def chunk_filing(filepath: str, chunk_size=1200, overlap=200):
     text = Path(filepath).read_text(encoding="utf-8")
     ticker, date = Path(filepath).stem.split("_")
 

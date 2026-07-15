@@ -69,3 +69,11 @@ def load_vectorstore():
         )
 
     return VECTORSTORE
+if __name__ == "__main__":
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(levelname)s - %(message)s",
+    )
+
+    build_vectorstore()

@@ -1,0 +1,14 @@
+{
+    "pipeline_version": "1.0",
+    "ticker": "NVDA",
+    "cik": "0001045810",
+    "form": "10-K",
+    "filingDate": "2026-02-25",
+    "downloaded_at": "2026-07-15T23:30:43.688960",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+    "characters": 339742,
+    "words": 51715,
+    "paragraphs": 974,
+    "raw_html": "data\\filings\\NVDA_2026-02-25.html",
+    "clean_text": "data\\filings\\NVDA_2026-02-25.txt"
+}

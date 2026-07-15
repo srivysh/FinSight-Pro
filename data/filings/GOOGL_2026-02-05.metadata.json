@@ -1,0 +1,14 @@
+{
+    "pipeline_version": "1.0",
+    "ticker": "GOOGL",
+    "cik": "0001652044",
+    "form": "10-K",
+    "filingDate": "2026-02-05",
+    "downloaded_at": "2026-07-15T23:30:46.151796",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+    "characters": 343986,
+    "words": 52768,
+    "paragraphs": 1306,
+    "raw_html": "data\\filings\\GOOGL_2026-02-05.html",
+    "clean_text": "data\\filings\\GOOGL_2026-02-05.txt"
+}

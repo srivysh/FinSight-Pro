@@ -1,0 +1,14 @@
+{
+    "pipeline_version": "1.0",
+    "ticker": "AMZN",
+    "cik": "0001018724",
+    "form": "10-K",
+    "filingDate": "2026-02-06",
+    "downloaded_at": "2026-07-15T23:30:48.337487",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+    "characters": 283050,
+    "words": 42754,
+    "paragraphs": 1038,
+    "raw_html": "data\\filings\\AMZN_2026-02-06.html",
+    "clean_text": "data\\filings\\AMZN_2026-02-06.txt"
+}

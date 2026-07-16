@@ -84,6 +84,65 @@ def build_prompt(question: str, context: str) -> str:
         context=context,
     )
 
+def compute_confidence(
+    answer: str,
+    sources: list,
+) -> float:
+    """
+    Estimate confidence using a simple retrieval-based heuristic.
+
+    Notes:
+        This is NOT model uncertainty.
+        It is based on retrieval quality only.
+    """
+
+    if not sources:
+        return 0.0
+
+    if "don't have enough information" in answer.lower():
+        return 0.1
+
+    best_score = min(source["score"] for source in sources)
+
+    confidence = max(
+        0.0,
+        min(
+            1.0,
+            1.0 - (best_score / 2.0),
+        ),
+    )
+
+    return round(confidence, 2)
+
+def format_citations(sources: list) -> str:
+    """
+    Create clean, deduplicated source citations.
+    """
+
+    if not sources:
+        return "No sources."
+
+    seen = set()
+    citations = []
+
+    for source in sources:
+
+        key = (
+            source["ticker"],
+            source["filing_date"],
+        )
+
+        if key not in seen:
+
+            citations.append(
+                f"- {source['ticker']} 10-K (Filed: {source['filing_date']})"
+            )
+
+            seen.add(key)
+
+    return "\n".join(citations)
+
+
 
 def answer_question(
     question: str,
@@ -143,22 +202,37 @@ def answer_question(
         }
 
     sources = [
-        {
-            "ticker": doc.metadata.get("ticker"),
-            "filing_date": doc.metadata.get("filing_date"),
-            "chunk_id": doc.metadata.get("chunk_id"),
-            "source": doc.metadata.get("source"),
-            "score": float(score),
-        }
-        for doc, score in results
+    {
+        "ticker": doc.metadata.get("ticker"),
+        "filing_date": doc.metadata.get("filing_date"),
+        "chunk_id": doc.metadata.get("chunk_id"),
+        "source": doc.metadata.get("source"),
+        "score": float(score),
+    }
+    for doc, score in results
     ]
 
-    logger.info("Answer generated successfully.")
+    confidence = compute_confidence(
+    answer=response.content,
+    sources=sources,
+    )
+
+    citations = format_citations(
+    sources=sources,
+    )
+
+    logger.info(
+    "Answer generated successfully | Confidence: %.2f | Sources Used: %d",
+    confidence,
+    len(sources),
+    )
 
     return {
-        "answer": response.content,
-        "sources": sources,
-    }
+    "answer": response.content,
+    "confidence": confidence,
+    "citations": citations,
+    "sources": sources,
+     }
 
 
 if __name__ == "__main__":
@@ -180,9 +254,23 @@ if __name__ == "__main__":
     print(result["answer"])
 
     print("\n" + "=" * 80)
-    print("SOURCES")
+    print("CONFIDENCE")
     print("=" * 80)
+    print(f"{result['confidence']:.2f}")
 
-    for source in result["sources"]:
+    print("\n" + "=" * 80)
+    print("CITATIONS")
+    print("=" * 80)
+    print(result["citations"])
+
+    print("\n" + "=" * 80)
+    DEBUG = False
+
+    if DEBUG:
+
+      print("\n" + "=" * 80)
+      print("RAW SOURCES")
+      print("=" * 80)
+
+      for source in result["sources"]:
         print(source)
-

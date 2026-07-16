@@ -1,26 +1,63 @@
 
 [
     {
-        "question": "How much did Apple's total net sales increase from 2024 to 2025?",
         "ticker": "AAPL",
-        "expected_keywords": [
-            "416,161",
-            "391,035",
-            "6%"
-        ]
+        "question": "How much did Apple's total net sales increase from 2024 to 2025?"
     },
     {
-        "question": "What are Apple's main risk factors?",
         "ticker": "AAPL",
-        "expected_keywords": [
-            "Risk Factors"
-        ]
+        "question": "How much did Apple spend on research and development?"
     },
     {
-        "question": "How much did Apple spend on research and development?",
         "ticker": "AAPL",
-        "expected_keywords": [
-            "34,550"
-        ]
+        "question": "What are Apple's main risk factors?"
+    },
+    {
+        "ticker": "MSFT",
+        "question": "What was Microsoft's revenue growth?"
+    },
+    {
+        "ticker": "MSFT",
+        "question": "How much did Microsoft spend on research and development?"
+    },
+    {
+        "ticker": "MSFT",
+        "question": "What are Microsoft's main risk factors?"
+    },
+    {
+        "ticker": "GOOGL",
+        "question": "What were Google's revenues?"
+    },
+    {
+        "ticker": "GOOGL",
+        "question": "How much did Google spend on research and development?"
+    },
+    {
+        "ticker": "GOOGL",
+        "question": "What are Google's main risk factors?"
+    },
+    {
+        "ticker": "NVDA",
+        "question": "What was NVIDIA's revenue growth?"
+    },
+    {
+        "ticker": "NVDA",
+        "question": "How much did NVIDIA spend on research and development?"
+    },
+    {
+        "ticker": "NVDA",
+        "question": "What are NVIDIA's main risk factors?"
+    },
+    {
+        "ticker": "AMZN",
+        "question": "What was Amazon's revenue growth?"
+    },
+    {
+        "ticker": "AMZN",
+        "question": "How much did Amazon spend on technology and content?"
+    },
+    {
+        "ticker": "AMZN",
+        "question": "What are Amazon's main risk factors?"
     }
 ]

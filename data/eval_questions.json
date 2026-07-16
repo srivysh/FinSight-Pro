@@ -1,63 +1,361 @@
-
 [
-    {
-        "ticker": "AAPL",
-        "question": "How much did Apple's total net sales increase from 2024 to 2025?"
-    },
-    {
-        "ticker": "AAPL",
-        "question": "How much did Apple spend on research and development?"
-    },
-    {
-        "ticker": "AAPL",
-        "question": "What are Apple's main risk factors?"
-    },
-    {
-        "ticker": "MSFT",
-        "question": "What was Microsoft's revenue growth?"
-    },
-    {
-        "ticker": "MSFT",
-        "question": "How much did Microsoft spend on research and development?"
-    },
-    {
-        "ticker": "MSFT",
-        "question": "What are Microsoft's main risk factors?"
-    },
-    {
-        "ticker": "GOOGL",
-        "question": "What were Google's revenues?"
-    },
-    {
-        "ticker": "GOOGL",
-        "question": "How much did Google spend on research and development?"
-    },
-    {
-        "ticker": "GOOGL",
-        "question": "What are Google's main risk factors?"
-    },
-    {
-        "ticker": "NVDA",
-        "question": "What was NVIDIA's revenue growth?"
-    },
-    {
-        "ticker": "NVDA",
-        "question": "How much did NVIDIA spend on research and development?"
-    },
-    {
-        "ticker": "NVDA",
-        "question": "What are NVIDIA's main risk factors?"
-    },
-    {
-        "ticker": "AMZN",
-        "question": "What was Amazon's revenue growth?"
-    },
-    {
-        "ticker": "AMZN",
-        "question": "How much did Amazon spend on technology and content?"
-    },
-    {
-        "ticker": "AMZN",
-        "question": "What are Amazon's main risk factors?"
-    }
+  {
+    "id": "AAPL_01",
+    "ticker": "AAPL",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "What were Apple's total net sales in 2025?",
+    "expected_answer_contains": [
+      "416161",
+      "net sales"
+    ],
+    "ground_truth": "Apple reported total net sales of $416,161 million in fiscal year 2025.",
+    "ground_truth_snippet": "Total net sales $416,161 million for fiscal year 2025.",
+    "year": 2025,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval",
+    "expected_confidence_min": 0.8
+  },
+  {
+    "id": "AAPL_02",
+    "ticker": "AAPL",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "How much did Apple spend on research and development in 2025?",
+    "expected_answer_contains": [
+      "34550",
+      "research",
+      "development"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "Apple spent $34,550 million on research and development in fiscal year 2025.",
+    "ground_truth_snippet": "Research and development expense was $34,550 million in fiscal year 2025.",
+    "year": 2025,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "AAPL_03",
+    "ticker": "AAPL",
+    "category": "risk",
+    "difficulty": "medium",
+    "question": "What are Apple's major risk factors?",
+    "expected_answer_contains": [
+      "macroeconomic",
+      "competition",
+      "regulation",
+      "tariffs"
+    ],
+    "expected_confidence_min": 0.65,
+    "ground_truth": "Apple identifies macroeconomic conditions, competition, increasing regulation, tariffs, product quality issues, and manufacturing risks as major business risk factors.",
+    "ground_truth_snippet": "The Risk Factors section discusses macroeconomic conditions, competition, increasing regulation, tariffs, manufacturing defects, and service quality issues.",
+    "year": 2025,
+    "answer_type": "qualitative",
+    "description": "Risk factor summarization"
+  },
+  {
+    "id": "AAPL_04",
+    "ticker": "AAPL",
+    "category": "business",
+    "difficulty": "medium",
+    "question": "What drove Apple's Services revenue growth?",
+    "expected_answer_contains": [
+      "advertising",
+      "App Store",
+      "cloud services"
+    ],
+    "expected_confidence_min": 0.65,
+    "ground_truth": "Apple's Services revenue growth was primarily driven by higher net sales from advertising, the App Store, and cloud services.",
+    "ground_truth_snippet": "Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store and cloud services.",
+    "year": 2025,
+    "answer_type": "qualitative",
+    "description": "Business performance explanation"
+  },
+  {
+    "id": "MSFT_05",
+    "ticker": "MSFT",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "What was Microsoft's total revenue in 2025?",
+    "expected_answer_contains": [
+      "281724",
+      "revenue"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "Microsoft reported total revenue of $281,724 million in fiscal year 2025.",
+    "ground_truth_snippet": "Revenue was $281,724 million for fiscal year 2025.",
+    "year": 2025,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "MSFT_06",
+    "ticker": "MSFT",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "How much did Microsoft spend on research and development in 2025?",
+    "expected_answer_contains": [
+      "32488",
+      "research",
+      "development"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "Microsoft spent $32,488 million on research and development in fiscal year 2025.",
+    "ground_truth_snippet": "Research and development expenses were $32,488 million in fiscal year 2025.",
+    "year": 2025,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "MSFT_07",
+    "ticker": "MSFT",
+    "category": "risk",
+    "difficulty": "medium",
+    "question": "What are Microsoft's major risk factors?",
+    "expected_answer_contains": [
+      "competition",
+      "cybersecurity",
+      "AI",
+      "regulation"
+    ],
+    "expected_confidence_min": 0.65,
+    "ground_truth": "Microsoft identifies competition, cybersecurity, AI, regulation, trade restrictions, and operational risks as major business risks.",
+    "ground_truth_snippet": "Risk Factors discusses competition, cybersecurity, AI, regulation, trade laws, and operational risks.",
+    "year": 2025,
+    "answer_type": "qualitative",
+    "description": "Risk factor summarization"
+  },
+  {
+    "id": "MSFT_08",
+    "ticker": "MSFT",
+    "category": "business",
+    "difficulty": "medium",
+    "question": "What drove Microsoft's revenue growth?",
+    "expected_answer_contains": [
+      "Azure",
+      "Microsoft 365",
+      "Gaming"
+    ],
+    "expected_confidence_min": 0.75,
+    "ground_truth": "Microsoft's revenue growth was primarily driven by Azure, Microsoft 365 Commercial cloud, Gaming, and Search and news advertising.",
+    "ground_truth_snippet": "Revenue growth was driven by Intelligent Cloud, Productivity and Business Processes, and More Personal Computing.",
+    "year": 2025,
+    "answer_type": "qualitative",
+    "description": "Business performance explanation"
+  },
+  {
+    "id": "GOOGL_09",
+    "ticker": "GOOGL",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "What was Alphabet's total revenue in 2025?",
+    "expected_answer_contains": [
+      "402836",
+      "revenue"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "Alphabet reported total revenue of $402,836 million in fiscal year 2025.",
+    "ground_truth_snippet": "Total revenue was $402,836 million for fiscal year 2025.",
+    "year": 2025,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "GOOGL_10",
+    "ticker": "GOOGL",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "How much did Alphabet spend on research and development in 2025?",
+    "expected_answer_contains": [
+      "61087",
+      "research",
+      "development"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "Alphabet spent $61,087 million on research and development in fiscal year 2025.",
+    "ground_truth_snippet": "Research and development expenses were $61,087 million in fiscal year 2025.",
+    "year": 2025,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "GOOGL_11",
+    "ticker": "GOOGL",
+    "category": "risk",
+    "difficulty": "medium",
+    "question": "What are Alphabet's major risk factors?",
+    "expected_answer_contains": [
+      "advertising",
+      "cybersecurity",
+      "privacy",
+      "regulation"
+    ],
+    "expected_confidence_min": 0.7,
+    "ground_truth": "Alphabet identifies advertising dependence, cybersecurity threats, privacy and data protection regulations, legal matters, and reputational risks as major business risks.",
+    "ground_truth_snippet": "Risk Factors discusses advertising, cybersecurity, privacy laws, legal proceedings, and brand reputation.",
+    "year": 2025,
+    "answer_type": "qualitative",
+    "description": "Risk factor summarization"
+  },
+  {
+    "id": "GOOGL_12",
+    "ticker": "GOOGL",
+    "category": "business",
+    "difficulty": "medium",
+    "question": "What drove Google Cloud revenue growth?",
+    "expected_answer_contains": [
+      "Google Cloud Platform",
+      "infrastructure",
+      "platform services"
+    ],
+    "expected_confidence_min": 0.75,
+    "ground_truth": "Google Cloud revenue growth was primarily driven by Google Cloud Platform, especially infrastructure and platform services.",
+    "ground_truth_snippet": "Google Cloud revenue increased primarily due to Google Cloud Platform infrastructure and platform services.",
+    "year": 2025,
+    "answer_type": "qualitative",
+    "description": "Business performance explanation"
+  },
+  {
+    "id": "NVDA_13",
+    "ticker": "NVDA",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "What was NVIDIA's total revenue in fiscal year 2026?",
+    "expected_answer_contains": [
+      "215938",
+      "revenue"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "NVIDIA reported total revenue of $215,938 million for fiscal year 2026.",
+    "ground_truth_snippet": "Revenue was $215,938 million for fiscal year 2026.",
+    "year": 2026,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "NVDA_14",
+    "ticker": "NVDA",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "How much did NVIDIA spend on research and development?",
+    "expected_answer_contains": [
+      "18497",
+      "research",
+      "development"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "NVIDIA spent $18,497 million on research and development during fiscal year 2026.",
+    "ground_truth_snippet": "Research and development expenses were $18,497 million during fiscal year 2026.",
+    "year": 2026,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "NVDA_15",
+    "ticker": "NVDA",
+    "category": "risk",
+    "difficulty": "hard",
+    "question": "What are NVIDIA's major risk factors?",
+    "expected_answer_contains": [
+      "export",
+      "competition",
+      "supply",
+      "security"
+    ],
+    "expected_confidence_min": 0.55,
+    "ground_truth": "NVIDIA identifies export controls, supply chain disruption, cybersecurity, customer concentration, and competition as major business risks.",
+    "ground_truth_snippet": "Item 1A discusses export controls, cybersecurity, supply chain risks, customer concentration, and competition.",
+    "year": 2026,
+    "answer_type": "qualitative",
+    "description": "Risk factor summarization"
+  },
+  {
+    "id": "NVDA_16",
+    "ticker": "NVDA",
+    "category": "business",
+    "difficulty": "hard",
+    "question": "What drove NVIDIA's revenue growth?",
+    "expected_answer_contains": [
+      "Blackwell",
+      "AI",
+      "Data Center",
+      "accelerated computing"
+    ],
+    "expected_confidence_min": 0.55,
+    "ground_truth": "NVIDIA's revenue growth was driven by accelerated computing, AI demand, Blackwell products, and Data Center growth.",
+    "ground_truth_snippet": "Revenue growth was driven by accelerated computing, AI, Blackwell, and Data Center platforms.",
+    "year": 2026,
+    "answer_type": "qualitative",
+    "description": "Business performance explanation"
+  },
+  {
+    "id": "AMZN_17",
+    "ticker": "AMZN",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "What was Amazon's total net sales in 2025?",
+    "expected_answer_contains": [
+      "716924",
+      "net sales"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "Amazon reported total net sales of $716,924 million in fiscal year 2025.",
+    "ground_truth_snippet": "Net sales were $716,924 million for fiscal year 2025.",
+    "year": 2025,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "AMZN_18",
+    "ticker": "AMZN",
+    "category": "financial",
+    "difficulty": "easy",
+    "question": "What was Amazon's operating income in 2025?",
+    "expected_answer_contains": [
+      "79.975",
+      "operating income"
+    ],
+    "expected_confidence_min": 0.8,
+    "ground_truth": "Amazon reported operating income of $79.975 billion in fiscal year 2025.",
+    "ground_truth_snippet": "Operating income was $79.975 billion for fiscal year 2025.",
+    "year": 2025,
+    "answer_type": "numeric",
+    "description": "Financial metric retrieval"
+  },
+  {
+    "id": "AMZN_19",
+    "ticker": "AMZN",
+    "category": "risk",
+    "difficulty": "medium",
+    "question": "What are Amazon's major risk factors?",
+    "expected_answer_contains": [
+      "competition",
+      "inflation",
+      "cybersecurity",
+      "trade"
+    ],
+    "expected_confidence_min": 0.65,
+    "ground_truth": "Amazon identifies competition, inflation, cybersecurity, tariffs, global economic conditions, and operational risks as major business risks.",
+    "ground_truth_snippet": "Item 1A Risk Factors discusses competition, cybersecurity, tariffs, inflation, and operational risks.",
+    "year": 2025,
+    "answer_type": "qualitative",
+    "description": "Risk factor summarization"
+  },
+  {
+    "id": "AMZN_20",
+    "ticker": "AMZN",
+    "category": "business",
+    "difficulty": "medium",
+    "question": "What drove AWS revenue growth?",
+    "expected_answer_contains": [
+      "customer usage",
+      "pricing"
+    ],
+    "expected_confidence_min": 0.65,
+    "ground_truth": "AWS revenue growth was primarily driven by increased customer usage, partially offset by pricing changes from long-term customer contracts.",
+    "ground_truth_snippet": "AWS revenue increased primarily due to higher customer usage, partially offset by pricing changes.",
+    "year": 2025,
+    "answer_type": "qualitative",
+    "description": "Business performance explanation"
+  }
 ]

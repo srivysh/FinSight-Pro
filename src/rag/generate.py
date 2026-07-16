@@ -238,39 +238,54 @@ def answer_question(
 if __name__ == "__main__":
 
     logging.basicConfig(
-    level=logging.INFO,
-    format="%(levelname)s - %(message)s",
+        level=logging.INFO,
+        format="%(levelname)s - %(message)s",
     )
 
-    result = answer_question(
-    question="How much did Apple's total net sales increase from 2024 to 2025?",
-    ticker_filter="AAPL",
-    k=8,
-    )
-
-    print("\n" + "=" * 80)
-    print("ANSWER")
-    print("=" * 80)
-    print(result["answer"])
-
-    print("\n" + "=" * 80)
-    print("CONFIDENCE")
-    print("=" * 80)
-    print(f"{result['confidence']:.2f}")
-
-    print("\n" + "=" * 80)
-    print("CITATIONS")
-    print("=" * 80)
-    print(result["citations"])
-
-    print("\n" + "=" * 80)
     DEBUG = False
 
-    if DEBUG:
+    TICKER = "AMZN"
+
+    QUESTIONS = [
+          "What was Amazon's operating income in 2025?"
+          ]
+    
+    TOP_K = 8
+
+    for question in QUESTIONS:
+
+      print("\n" + "#" * 100)
+      print(f"QUESTION: {question}")
+      print("#" * 100)
+
+      result = answer_question(
+        question=question,
+        ticker_filter=TICKER,
+        k=TOP_K,
+        )
 
       print("\n" + "=" * 80)
-      print("RAW SOURCES")
+      print("ANSWER")
       print("=" * 80)
+      print(result["answer"])
 
-      for source in result["sources"]:
-        print(source)
+      print("\n" + "=" * 80)
+      print("CONFIDENCE")
+      print("=" * 80)
+      print(f"{result['confidence']:.2f}")
+
+      print("\n" + "=" * 80)
+      print("CITATIONS")
+      print("=" * 80)
+      print(result["citations"])
+
+      if DEBUG:
+
+          print("\n" + "=" * 80)
+          print("RAW SOURCES")
+          print("=" * 80)
+
+          for i, source in enumerate(result["sources"], start=1):
+              print(f"\nSource {i}")
+              print("-" * 60)
+              print(source)

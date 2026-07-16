@@ -1,0 +1,1624 @@
+{
+    "results": [
+        {
+            "id": "AAPL_01",
+            "ticker": "AAPL",
+            "year": 2025,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "What were Apple's total net sales in 2025?",
+            "ground_truth": "Apple reported total net sales of $416,161 million in fiscal year 2025.",
+            "ground_truth_snippet": "Total net sales $416,161 million for fiscal year 2025.",
+            "answer": "$416,161.",
+            "confidence": 0.82,
+            "keyword_score": 1.0,
+            "latency": 14.04,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 135,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.3596697449684143
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 134,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.3605198860168457
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 133,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.47137945890426636
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 130,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.541409969329834
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 170,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.5628928542137146
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 152,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.5734843611717224
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 169,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.5815147161483765
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 129,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.6297697424888611
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "AAPL_02",
+            "ticker": "AAPL",
+            "year": 2025,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "How much did Apple spend on research and development in 2025?",
+            "ground_truth": "Apple spent $34,550 million on research and development in fiscal year 2025.",
+            "ground_truth_snippet": "Research and development expense was $34,550 million in fiscal year 2025.",
+            "answer": "$34,550 million.",
+            "confidence": 0.71,
+            "keyword_score": 1.0,
+            "latency": 1.65,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 130,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.5716617703437805
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 134,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.6407870054244995
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 135,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.6419154405593872
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 152,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.6836681962013245
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 198,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.6877398490905762
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 133,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.6945713758468628
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 129,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7044323682785034
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 137,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7226142287254333
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "AAPL_03",
+            "ticker": "AAPL",
+            "year": 2025,
+            "category": "risk",
+            "difficulty": "medium",
+            "answer_type": "qualitative",
+            "description": "Risk factor summarization",
+            "question": "What are Apple's major risk factors?",
+            "ground_truth": "Apple identifies macroeconomic conditions, competition, increasing regulation, tariffs, product quality issues, and manufacturing risks as major business risk factors.",
+            "ground_truth_snippet": "The Risk Factors section discusses macroeconomic conditions, competition, increasing regulation, tariffs, manufacturing defects, and service quality issues.",
+            "answer": "The major risk factors for Apple Inc. include:\n\n1. Macroeconomic and industry risks, such as inflation, interest rates, and currency fluctuations, which can impact the Company's results of operations and financial condition.\n2. Design and manufacturing defects in complex hardware and software products and services, which can lead to safety risks, environmental or property damage, and personal injury.\n3. Quality issues and outages in the Company's service offerings, which can result in customer dissatisfaction and loss of business.\n4. Increasing regulation, government investigations, legal actions, and penalties due to intense media, political, and regulatory scrutiny in the technology industry.\n5. Competition-related laws and regulations in various jurisdictions, which can impose wide-ranging obligations on technology companies and limit their businesses.\n6. Tariffs and other measures that can impact the Company's results of operations and financial condition.\n7. The introduction of new and complex technologies, such as artificial intelligence features, which can increase safety risks and expose users to harmful, inaccurate, or other negative content and experiences.\n\nThese risk factors are summarized in the \"Risk Factors\" section of Apple's Form 10-K filing for the fiscal year ended September 27, 2025.",
+            "confidence": 0.64,
+            "keyword_score": 1.0,
+            "latency": 17.14,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 29,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7149011492729187
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 6,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7445619106292725
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 165,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7758142352104187
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 55,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7949552536010742
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 90,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.818294107913971
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 130,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.8203123211860657
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 152,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.8237410187721252
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 129,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.8297624588012695
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "AAPL_04",
+            "ticker": "AAPL",
+            "year": 2025,
+            "category": "business",
+            "difficulty": "medium",
+            "answer_type": "qualitative",
+            "description": "Business performance explanation",
+            "question": "What drove Apple's Services revenue growth?",
+            "ground_truth": "Apple's Services revenue growth was primarily driven by higher net sales from advertising, the App Store, and cloud services.",
+            "ground_truth_snippet": "Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store and cloud services.",
+            "answer": "Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store and cloud services.",
+            "confidence": 0.67,
+            "keyword_score": 1.0,
+            "latency": 22.65,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 169,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.6667845249176025
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 152,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7140515446662903
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 170,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7283777594566345
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 165,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7548917531967163
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 135,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7594530582427979
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 62,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7625861167907715
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 18,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7728146910667419
+                },
+                {
+                    "ticker": "AAPL",
+                    "filing_date": "2025-10-31",
+                    "chunk_id": 134,
+                    "source": "data\\filings\\AAPL_2025-10-31.txt",
+                    "score": 0.7948607802391052
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "MSFT_05",
+            "ticker": "MSFT",
+            "year": 2025,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "What was Microsoft's total revenue in 2025?",
+            "ground_truth": "Microsoft reported total revenue of $281,724 million in fiscal year 2025.",
+            "ground_truth_snippet": "Revenue was $281,724 million for fiscal year 2025.",
+            "answer": "$281,724 million (Filed: 2025-07-30)",
+            "confidence": 0.76,
+            "keyword_score": 1.0,
+            "latency": 21.59,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 198,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.48343369364738464
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 212,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.4918419420719147
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 368,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.49490976333618164
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 365,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.5231805443763733
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 214,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.5555155873298645
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 215,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.5939005017280579
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 199,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.6152807474136353
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 220,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.6162471771240234
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "MSFT_06",
+            "ticker": "MSFT",
+            "year": 2025,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "How much did Microsoft spend on research and development in 2025?",
+            "ground_truth": "Microsoft spent $32,488 million on research and development in fiscal year 2025.",
+            "ground_truth_snippet": "Research and development expenses were $32,488 million in fiscal year 2025.",
+            "answer": "$32,488 million. \n\n[MSFT | Filed: 2025-07-30]",
+            "confidence": 0.76,
+            "keyword_score": 1.0,
+            "latency": 16.68,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 220,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.48514825105667114
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 368,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.6339446902275085
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 198,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.6466844081878662
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 214,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.6761420369148254
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 212,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.6950783133506775
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 365,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7167078852653503
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 199,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.745101809501648
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 366,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7469992637634277
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "MSFT_07",
+            "ticker": "MSFT",
+            "year": 2025,
+            "category": "risk",
+            "difficulty": "medium",
+            "answer_type": "qualitative",
+            "description": "Risk factor summarization",
+            "question": "What are Microsoft's major risk factors?",
+            "ground_truth": "Microsoft identifies competition, cybersecurity, AI, regulation, trade restrictions, and operational risks as major business risks.",
+            "ground_truth_snippet": "Risk Factors discusses competition, cybersecurity, AI, regulation, trade laws, and operational risks.",
+            "answer": "Microsoft's major risk factors include:\n\n1. Strategic and competitive risks due to intense competition in the technology sector.\n2. Product defects, recalls, and safety alerts related to hardware products such as Xbox consoles and Surface devices.\n3. Cybersecurity, data privacy, and platform abuse risks, including cyberattacks, security vulnerabilities, and harm to reputation or competitive position.\n4. Risks associated with AI, including flawed algorithms, biased datasets, and ineffective development or deployment practices.\n5. Increasing trade laws, policies, sanctions, and other regulatory requirements affecting operations in and outside the U.S.\n6. Operational and economic risks due to the global nature of the business, including geopolitical risks, economic developments, and restrictions on international trade.\n\n[MSFT | Filed: 2025-07-30]",
+            "confidence": 0.65,
+            "keyword_score": 0.75,
+            "latency": 14.45,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 73,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7074003219604492
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 138,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7189347743988037
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 95,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7219326496124268
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 123,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7399021983146667
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 104,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7467954158782959
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 126,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7560397386550903
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 147,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7863731980323792
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 171,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.7871169447898865
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "MSFT_08",
+            "ticker": "MSFT",
+            "year": 2025,
+            "category": "business",
+            "difficulty": "medium",
+            "answer_type": "qualitative",
+            "description": "Business performance explanation",
+            "question": "What drove Microsoft's revenue growth?",
+            "ground_truth": "Microsoft's revenue growth was primarily driven by Azure, Microsoft 365 Commercial cloud, Gaming, and Search and news advertising.",
+            "ground_truth_snippet": "Revenue growth was driven by Intelligent Cloud, Productivity and Business Processes, and More Personal Computing.",
+            "answer": "Microsoft's revenue growth was driven by growth across each of our segments, including:\n\n- Intelligent Cloud revenue increased driven by Azure.\n- Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud.\n- More Personal Computing revenue increased driven by Gaming and Search and news advertising.\n\nSpecifically, the growth was driven by:\n\n- Azure and other cloud services revenue grew 34%.\n- Dynamics 365 revenue grew 19%.\n- Xbox content and services revenue increased 16%.\n- Search and news advertising revenue excluding traffic acquisition costs increased 20%.\n- Microsoft 365 Commercial cloud revenue grew 15% with Microsoft 365 Commercial seat growth of 6%.\n- Microsoft 365 Consumer cloud revenue grew 11% driven by Microsoft 365 Consumer subscriber growth of 8% to 89.0 million.",
+            "confidence": 0.79,
+            "keyword_score": 1.0,
+            "latency": 20.87,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 199,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.4136691093444824
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 215,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.4607640504837036
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 218,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.4635138511657715
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 212,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.48984235525131226
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 217,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.5275413990020752
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 198,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.5358520150184631
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 216,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.5541160106658936
+                },
+                {
+                    "ticker": "MSFT",
+                    "filing_date": "2025-07-30",
+                    "chunk_id": 210,
+                    "source": "data\\filings\\MSFT_2025-07-30.txt",
+                    "score": 0.5919840931892395
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "GOOGL_09",
+            "ticker": "GOOGL",
+            "year": 2025,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "What was Alphabet's total revenue in 2025?",
+            "ground_truth": "Alphabet reported total revenue of $402,836 million in fiscal year 2025.",
+            "ground_truth_snippet": "Total revenue was $402,836 million for fiscal year 2025.",
+            "answer": "$402,836",
+            "confidence": 0.77,
+            "keyword_score": 1.0,
+            "latency": 23.83,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 246,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.4596775472164154
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 9,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.48545148968696594
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 188,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5112494230270386
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 303,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5154843330383301
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 185,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.525445818901062
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 244,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.528715968132019
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 190,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5513194799423218
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 293,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5533003807067871
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "GOOGL_10",
+            "ticker": "GOOGL",
+            "year": 2025,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "How much did Alphabet spend on research and development in 2025?",
+            "ground_truth": "Alphabet spent $61,087 million on research and development in fiscal year 2025.",
+            "ground_truth_snippet": "Research and development expenses were $61,087 million in fiscal year 2025.",
+            "answer": "$61,087 million. \n\n(Alphabet Inc. | Filed: 2026-02-05)",
+            "confidence": 0.73,
+            "keyword_score": 1.0,
+            "latency": 20.75,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 185,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5425858497619629
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 192,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5850836634635925
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 246,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.587066650390625
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 188,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6075202822685242
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 9,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6219242811203003
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 303,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.629153847694397
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 367,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6315132975578308
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 190,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.631985068321228
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "GOOGL_11",
+            "ticker": "GOOGL",
+            "year": 2025,
+            "category": "risk",
+            "difficulty": "medium",
+            "answer_type": "qualitative",
+            "description": "Risk factor summarization",
+            "question": "What are Alphabet's major risk factors?",
+            "ground_truth": "Alphabet identifies advertising dependence, cybersecurity threats, privacy and data protection regulations, legal matters, and reputational risks as major business risks.",
+            "ground_truth_snippet": "Risk Factors discusses advertising, cybersecurity, privacy laws, legal proceedings, and brand reputation.",
+            "answer": "Alphabet's major risk factors include:\n\n1. Reduced spending by advertisers, loss of partners, shifts in online advertising, new and evolving advertising formats, or new or existing technologies that block ads online or affect our ability to personalize ads.\n2. Interruption to, interference with, or failure of our complex information technology and communications systems.\n3. Cybersecurity threats, including software supply chain and other third-party dependencies, vulnerabilities in our products and services, theft of our intellectual property, and attempts to compromise our infrastructure.\n4. Failure to maintain and enhance our brands due to reputational issues, third-party content shared on our platforms, data privacy and security issues, and product or technical performance failures.\n5. Cyber attacks and data exfiltration or compromise by nation-states and state-sponsored actors.\n6. Non-compliance with data protection laws, resulting in fines, orders to change practices, and adverse effects on our business.\n7. Ongoing legal matters, including civil judgments and compounding penalties imposed upon us in connection with disputes regarding the termination of accounts, including those of sanctioned parties.\n\n[GOOGL | Filed: 2026-02-05]",
+            "confidence": 0.75,
+            "keyword_score": 0.75,
+            "latency": 898.27,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 48,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5028841495513916
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 76,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6377080678939819
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 153,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6583273410797119
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 43,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6629002094268799
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 69,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6652055978775024
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 98,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6878403425216675
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 127,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6889684200286865
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 353,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6934432983398438
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "GOOGL_12",
+            "ticker": "GOOGL",
+            "year": 2025,
+            "category": "business",
+            "difficulty": "medium",
+            "answer_type": "qualitative",
+            "description": "Business performance explanation",
+            "question": "What drove Google Cloud revenue growth?",
+            "ground_truth": "Google Cloud revenue growth was primarily driven by Google Cloud Platform, especially infrastructure and platform services.",
+            "ground_truth_snippet": "Google Cloud revenue increased primarily due to Google Cloud Platform infrastructure and platform services.",
+            "answer": "Google Cloud revenue growth was primarily driven by growth in Google Cloud Platform largely from infrastructure and platform services, which increased $15.5 billion from 2024 to 2025.",
+            "confidence": 0.77,
+            "keyword_score": 1.0,
+            "latency": 3.46,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 189,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.46211448311805725
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 178,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5238737463951111
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 195,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5439131259918213
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 19,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5572996139526367
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 187,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5659255385398865
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 31,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5694690346717834
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 291,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.5985897779464722
+                },
+                {
+                    "ticker": "GOOGL",
+                    "filing_date": "2026-02-05",
+                    "chunk_id": 292,
+                    "source": "data\\filings\\GOOGL_2026-02-05.txt",
+                    "score": 0.6027709245681763
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "NVDA_13",
+            "ticker": "NVDA",
+            "year": 2026,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "What was NVIDIA's total revenue in fiscal year 2026?",
+            "ground_truth": "NVIDIA reported total revenue of $215,938 million for fiscal year 2026.",
+            "ground_truth_snippet": "Revenue was $215,938 million for fiscal year 2026.",
+            "answer": "$215,938 million (NVDA | Filed: 2026-02-25)",
+            "confidence": 0.79,
+            "keyword_score": 1.0,
+            "latency": 1.66,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 361,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.41466349363327026
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 402,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.4153742790222168
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 236,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.4793478548526764
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 299,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.49330851435661316
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 395,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.525297999382019
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 304,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.5280313491821289
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 369,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.5306562185287476
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 404,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.5441499352455139
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "NVDA_14",
+            "ticker": "NVDA",
+            "year": 2026,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "How much did NVIDIA spend on research and development?",
+            "ground_truth": "NVIDIA spent $18,497 million on research and development during fiscal year 2026.",
+            "ground_truth_snippet": "Research and development expenses were $18,497 million during fiscal year 2026.",
+            "answer": "For the year ended January 25, 2026, NVIDIA spent $18,497 million on research and development. \n\nFor the year ended January 26, 2025, NVIDIA spent $12,914 million on research and development. \n\nFor the year ended January 28, 2024, NVIDIA spent $8,675 million on research and development.\n\n[NVDA | Filed: 2026-02-25]",
+            "confidence": 0.69,
+            "keyword_score": 1.0,
+            "latency": 13.95,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 402,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6159408688545227
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 22,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6308537721633911
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 369,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6358948349952698
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 299,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6378888487815857
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 17,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6412041187286377
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 393,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.656649112701416
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 13,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6630274057388306
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 361,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6667147874832153
+                }
+            ],
+            "passed": false,
+            "failure_reason": "Low confidence"
+        },
+        {
+            "id": "NVDA_15",
+            "ticker": "NVDA",
+            "year": 2026,
+            "category": "risk",
+            "difficulty": "hard",
+            "answer_type": "qualitative",
+            "description": "Risk factor summarization",
+            "question": "What are NVIDIA's major risk factors?",
+            "ground_truth": "NVIDIA identifies export controls, supply chain disruption, cybersecurity, customer concentration, and competition as major business risks.",
+            "ground_truth_snippet": "Item 1A discusses export controls, cybersecurity, supply chain risks, customer concentration, and competition.",
+            "answer": "According to Item 1A. Risk Factors, NVIDIA's major risk factors include:\n\n1. Broad requests for information from competition regulators in various countries, which could be expensive and burdensome and negatively impact their business.\n2. Government mandates in chip designs that could introduce system vulnerabilities and expose NVIDIA to significant risk and potential liability.\n3. Export controls that may have a disproportionate impact on NVIDIA and disadvantage them against certain competitors.\n4. Breaches of their security measures, which could expose them and third parties to a risk of loss, or misuse of sensitive or confidential data.\n5. Potential litigation and liability resulting from breaches of their security measures or unapproved dissemination of proprietary information.\n\nThese risk factors are mentioned in the provided filings, specifically in the section titled \"Item 1A. Risk Factors\" under the company ticker NVDA, filed on 2026-02-25.",
+            "confidence": 0.7,
+            "keyword_score": 0.75,
+            "latency": 19.11,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 6,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6054969429969788
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 226,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6290773749351501
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 155,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6774205565452576
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 177,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6874662637710571
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 120,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.7013314962387085
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 181,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.7051761150360107
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 414,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.7157751321792603
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 22,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.7220689654350281
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "NVDA_16",
+            "ticker": "NVDA",
+            "year": 2026,
+            "category": "business",
+            "difficulty": "hard",
+            "answer_type": "qualitative",
+            "description": "Business performance explanation",
+            "question": "What drove NVIDIA's revenue growth?",
+            "ground_truth": "NVIDIA's revenue growth was driven by accelerated computing, AI demand, Blackwell products, and Data Center growth.",
+            "ground_truth_snippet": "Revenue growth was driven by accelerated computing, AI, Blackwell, and Data Center platforms.",
+            "answer": "The year over year increase in Compute & Networking revenue was driven by major platform shifts – accelerated computing and AI. Revenue from Data Center computing grew 59% driven by demand for our Blackwell computing platform. Revenue from Data Center networking grew 142% driven by the introduction and continued ramp of NVLink compute fabric for GB200 and GB300 systems and the growth of Ethernet and InfiniBand platforms.\n\nThe year over year increase in Graphics revenue was driven by sales of our Blackwell architecture.\n\n(NVDA | Filed: 2026-02-25)",
+            "confidence": 0.72,
+            "keyword_score": 1.0,
+            "latency": 18.2,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 249,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.5640251040458679
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 361,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.5818643569946289
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 227,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.5981860160827637
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 400,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6028907299041748
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 13,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6105754375457764
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 402,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6230242252349854
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 16,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6253726482391357
+                },
+                {
+                    "ticker": "NVDA",
+                    "filing_date": "2026-02-25",
+                    "chunk_id": 226,
+                    "source": "data\\filings\\NVDA_2026-02-25.txt",
+                    "score": 0.6387381553649902
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "AMZN_17",
+            "ticker": "AMZN",
+            "year": 2025,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "What was Amazon's total net sales in 2025?",
+            "ground_truth": "Amazon reported total net sales of $716,924 million in fiscal year 2025.",
+            "ground_truth_snippet": "Net sales were $716,924 million for fiscal year 2025.",
+            "answer": "$716,924 (AMZN | Filed: 2026-02-06)",
+            "confidence": 0.78,
+            "keyword_score": 1.0,
+            "latency": 20.74,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 327,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.4309391975402832
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 152,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5192868113517761
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 326,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5747592449188232
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 333,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5889256596565247
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 180,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5900607705116272
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 154,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5967361927032471
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 330,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6105421781539917
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 198,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6198082566261292
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "AMZN_18",
+            "ticker": "AMZN",
+            "year": 2025,
+            "category": "financial",
+            "difficulty": "easy",
+            "answer_type": "numeric",
+            "description": "Financial metric retrieval",
+            "question": "What was Amazon's operating income in 2025?",
+            "ground_truth": "Amazon reported operating income of $79.975 billion in fiscal year 2025.",
+            "ground_truth_snippet": "Operating income was $79.975 billion for fiscal year 2025.",
+            "answer": "$79.975 billion (AMZN | Filed: 2026-02-06)",
+            "confidence": 0.79,
+            "keyword_score": 1.0,
+            "latency": 23.84,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 168,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.42548689246177673
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 169,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.4265032112598419
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 181,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.4539538025856018
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 180,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5082614421844482
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 198,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5151365399360657
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 326,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5156370401382446
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 327,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5651258826255798
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 200,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5677258968353271
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "AMZN_19",
+            "ticker": "AMZN",
+            "year": 2025,
+            "category": "risk",
+            "difficulty": "medium",
+            "answer_type": "qualitative",
+            "description": "Risk factor summarization",
+            "question": "What are Amazon's major risk factors?",
+            "ground_truth": "Amazon identifies competition, inflation, cybersecurity, tariffs, global economic conditions, and operational risks as major business risks.",
+            "ground_truth_snippet": "Item 1A Risk Factors discusses competition, cybersecurity, tariffs, inflation, and operational risks.",
+            "answer": "According to Item 1A of Part I, Amazon's major risk factors include:\n\n1. Fluctuations in foreign exchange rates and energy prices\n2. Changes in global economic conditions\n3. Tariff and trade policies\n4. Resource and supply volatility, including for memory chips\n5. Customer demand and spending\n6. Inflation\n7. Interest rates\n8. Regional labor market constraints\n9. World events\n10. The rate of growth of the internet, online commerce, cloud services, and new and emerging technologies\n11. The amount that Amazon.com invests in new business opportunities and the timing of those investments\n12. The mix of products and services sold to customers\n13. Competition\n14. Management of growth\n15. Potential fluctuations in operating results\n16. International growth and expansion\n17. The outcomes of claims, litigation, government investigations, and other proceedings\n18. Fulfillment, sortation, delivery, and data center optimization\n19. Risks of inventory management\n20. Variability in demand\n21. The degree to which we enter into, maintain, and develop commercial agreements\n\nThese risk factors are described in greater detail in Item 1A of Part I, \"Risk Factors.\"",
+            "confidence": 0.71,
+            "keyword_score": 0.75,
+            "latency": 16.52,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 7,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5776508450508118
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 118,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.670762300491333
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 180,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6805622577667236
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 78,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6898859739303589
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 77,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.692665696144104
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 120,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6961446404457092
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 26,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6980310082435608
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 108,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.7356264591217041
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        },
+        {
+            "id": "AMZN_20",
+            "ticker": "AMZN",
+            "year": 2025,
+            "category": "business",
+            "difficulty": "medium",
+            "answer_type": "qualitative",
+            "description": "Business performance explanation",
+            "question": "What drove AWS revenue growth?",
+            "ground_truth": "AWS revenue growth was primarily driven by increased customer usage, partially offset by pricing changes from long-term customer contracts.",
+            "ground_truth_snippet": "AWS revenue increased primarily due to higher customer usage, partially offset by pricing changes.",
+            "answer": "Increased customer usage, partially offset by pricing changes primarily driven by long-term customer contracts.",
+            "confidence": 0.71,
+            "keyword_score": 1.0,
+            "latency": 20.01,
+            "has_source": true,
+            "num_sources": 8,
+            "sources": [
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 154,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5729721188545227
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 169,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.5830357074737549
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 125,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.621599555015564
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 52,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6712255477905273
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 126,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6814455986022949
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 121,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.6947692632675171
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 152,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.7073317170143127
+                },
+                {
+                    "ticker": "AMZN",
+                    "filing_date": "2026-02-06",
+                    "chunk_id": 261,
+                    "source": "data\\filings\\AMZN_2026-02-06.txt",
+                    "score": 0.7103025913238525
+                }
+            ],
+            "passed": true,
+            "failure_reason": null
+        }
+    ],
+    "statistics": {
+        "total_questions": 20,
+        "passed": 19,
+        "failed": 1,
+        "pass_rate": 0.95,
+        "average_keyword_score": 0.95,
+        "average_confidence": 0.74,
+        "average_latency": 60.47,
+        "citation_rate": 1.0,
+        "company_breakdown": {
+            "AAPL": {
+                "total": 4,
+                "passed": 4
+            },
+            "MSFT": {
+                "total": 4,
+                "passed": 4
+            },
+            "GOOGL": {
+                "total": 4,
+                "passed": 4
+            },
+            "NVDA": {
+                "total": 4,
+                "passed": 3
+            },
+            "AMZN": {
+                "total": 4,
+                "passed": 4
+            }
+        },
+        "difficulty_breakdown": {
+            "easy": {
+                "total": 10,
+                "passed": 9
+            },
+            "medium": {
+                "total": 8,
+                "passed": 8
+            },
+            "hard": {
+                "total": 2,
+                "passed": 2
+            }
+        },
+        "category_breakdown": {
+            "financial": {
+                "total": 10,
+                "passed": 9
+            },
+            "risk": {
+                "total": 5,
+                "passed": 5
+            },
+            "business": {
+                "total": 5,
+                "passed": 5
+            }
+        }
+    }
+}

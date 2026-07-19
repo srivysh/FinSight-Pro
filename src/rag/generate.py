@@ -5,7 +5,6 @@ from typing import Any
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 
-from src.rag.retrieve import search
 logger = logging.getLogger(__name__)
 
 load_dotenv()
@@ -59,14 +58,31 @@ def build_context(results) -> str:
 
     context_parts = []
 
-    for doc, _ in results:
+    for chunk, _ in results:
 
-        ticker = doc.metadata.get("ticker", "Unknown")
-        filing_date = doc.metadata.get("filing_date", "Unknown")
+        if hasattr(chunk, "metadata"):
+
+            metadata = chunk.metadata
+            text = chunk.page_content
+
+        else:
+
+            metadata = chunk["metadata"]
+            text = chunk["text"]
+
+        ticker = metadata.get(
+            "ticker",
+            "Unknown",
+        )
+
+        filing_date = metadata.get(
+            "filing_date",
+            "Unknown",
+        )
 
         context_parts.append(
             f"[{ticker} | Filed: {filing_date}]\n"
-            f"{doc.page_content}"
+            f"{text}"
         )
 
     separator = "\n\n" + ("-" * 80) + "\n\n"
@@ -143,41 +159,82 @@ def format_citations(sources: list) -> str:
     return "\n".join(citations)
 
 
-
 def answer_question(
     question: str,
     ticker_filter: str | None = None,
     k: int = 8,
-) -> dict:
+    retrieval_method: str = "vector",
+    ) -> dict:
     """
-    Retrieve relevant documents and generate a grounded answer using Groq.
+    Retrieve relevant documents and generate a grounded answer.
 
     Args:
-        question: User's question.
-        ticker_filter: Optional company ticker (e.g., "AAPL").
-        k: Number of documents to retrieve.
+        question:
+            User's question.
+
+        ticker_filter:
+            Optional company ticker.
+
+        k:
+            Number of chunks to retrieve.
+
+        retrieval_method:
+            "vector" or "hybrid".
 
     Returns:
-        Dictionary containing the generated answer and source metadata.
+        Dictionary containing the answer, confidence,
+        citations and retrieved sources.
     """
 
-    logger.info("Searching for relevant documents...")
-
-    results = search(
-        query=question,
-        k=k,
-        ticker_filter=ticker_filter,
+    logger.info(
+        "Searching documents | Method=%s | k=%d",
+        retrieval_method,
+        k,
     )
 
+    if retrieval_method == "vector":
+
+        from src.rag.retrieve import search
+
+        results = search(
+            query=question,
+            ticker_filter=ticker_filter,
+            k=k,
+        )
+
+    elif retrieval_method == "hybrid":
+
+        from src.rag.hybrid_search import hybrid_search
+
+        results = hybrid_search(
+            query=question,
+            ticker_filter=ticker_filter,
+            k=k,
+        )
+
+    else:
+        raise ValueError(
+            "retrieval_method must be either "
+            "'vector' or 'hybrid'."
+        )
+
     if not results:
-        logger.warning("No relevant documents found.")
+
+        logger.warning(
+            "No relevant documents found."
+        )
 
         return {
             "answer": "No relevant documents were found.",
+            "confidence": 0.0,
+            "citations": [],
             "sources": [],
         }
 
-    logger.info("Building context from %d retrieved documents.", len(results))
+    logger.info(
+        "Building context from %d chunks.",
+        len(results),
+    )
 
     context = build_context(results)
 
@@ -188,51 +245,70 @@ def answer_question(
 
     llm = get_llm()
 
-    logger.info("Generating response from Groq...")
+    logger.info(
+        "Generating response..."
+    )
 
     try:
+
         response = llm.invoke(prompt)
 
     except Exception as exc:
-        logger.exception("Groq request failed.")
+
+        logger.exception(
+            "Groq request failed."
+        )
 
         return {
             "answer": f"LLM generation failed: {exc}",
+            "confidence": 0.0,
+            "citations": [],
             "sources": [],
         }
 
-    sources = [
-    {
-        "ticker": doc.metadata.get("ticker"),
-        "filing_date": doc.metadata.get("filing_date"),
-        "chunk_id": doc.metadata.get("chunk_id"),
-        "source": doc.metadata.get("source"),
-        "score": float(score),
-    }
-    for doc, score in results
-    ]
+    sources = []
+
+    for chunk, score in results:
+
+      if hasattr(chunk, "metadata"):
+
+         metadata = chunk.metadata
+
+      else:
+
+        metadata = chunk["metadata"]
+
+      sources.append(
+         {
+            "ticker": metadata.get("ticker"),
+            "filing_date": metadata.get("filing_date"),
+            "chunk_id": metadata.get("chunk_id"),
+            "source": metadata.get("source"),
+            "score": float(score),
+         }
+         )
 
     confidence = compute_confidence(
-    answer=response.content,
-    sources=sources,
+        answer=response.content,
+        sources=sources,
     )
 
     citations = format_citations(
-    sources=sources,
+        sources=sources,
     )
 
     logger.info(
-    "Answer generated successfully | Confidence: %.2f | Sources Used: %d",
-    confidence,
-    len(sources),
+        "Answer generated | Confidence=%.2f | Sources=%d",
+        confidence,
+        len(sources),
     )
 
     return {
-    "answer": response.content,
-    "confidence": confidence,
-    "citations": citations,
-    "sources": sources,
-     }
+        "answer": response.content,
+        "confidence": confidence,
+        "citations": citations,
+        "sources": sources,
+    }
 
 
 if __name__ == "__main__":
@@ -261,9 +337,9 @@ if __name__ == "__main__":
       result = answer_question(
         question=question,
         ticker_filter=TICKER,
-        k=TOP_K,
-        )
-
+         k=TOP_K,
+         retrieval_method="hybrid",
+          )
       print("\n" + "=" * 80)
       print("ANSWER")
       print("=" * 80)

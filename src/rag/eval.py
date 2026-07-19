@@ -89,31 +89,6 @@ def keyword_score(
         2,
     )
 
-    def normalize(text: str) -> str:
-        text = text.lower()
-
-        text = re.sub(r"[$,%]", "", text)
-        text = re.sub(r"[^\w\s]", " ", text)
-        text = re.sub(r"\s+", " ", text)
-
-        return text.strip()
-
-    normalized_answer = normalize(answer)
-
-    matches = 0
-
-    for keyword in expected_keywords:
-
-        normalized_keyword = normalize(keyword)
-
-        if normalized_keyword in normalized_answer:
-            matches += 1
-
-    return round(
-        matches / len(expected_keywords),
-        2,
-    )
-
 def has_citation(result: dict) -> bool:
     """
     Return True if at least one source
@@ -125,7 +100,9 @@ def has_citation(result: dict) -> bool:
 def measure_latency(
     question: str,
     ticker: str,
-):
+    retrieval_method: str = "vector",
+    k: int = 4,
+    ):
     """
     Run one question while measuring
     response time.
@@ -136,6 +113,8 @@ def measure_latency(
     result = answer_question(
         question=question,
         ticker_filter=ticker,
+        retrieval_method=retrieval_method,
+        k=k,
     )
 
     latency = round(
@@ -180,7 +159,10 @@ def pass_fail(
         and has_source
     )
 
-def run_eval() -> list[dict]:
+def run_eval(
+    retrieval_method: str = "vector",
+    k: int = 4,
+    ) -> list[dict]:
     """
     Run the complete evaluation benchmark.
 
@@ -214,6 +196,8 @@ def run_eval() -> list[dict]:
             result, latency = measure_latency(
                 question=question["question"],
                 ticker=question["ticker"],
+                retrieval_method=retrieval_method,
+                k=k,
             )
 
             score = keyword_score(
@@ -620,7 +604,10 @@ if __name__ == "__main__":
 
     logger.info("Starting evaluation...")
 
-    results = run_eval()
+    results = run_eval(
+    retrieval_method="hybrid",
+    k=6,
+    )
 
     statistics = compute_statistics(results)
 

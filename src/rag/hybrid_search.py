@@ -208,12 +208,19 @@ def hybrid_search(
         fused[key]["fusion_score"] += (1 - vector_weight) * (1 / (rank + 1))
 
     results = sorted(
-        fused.values(),
-        key=lambda item: item["fusion_score"],
-        reverse=True,
-    )
+    fused.values(),
+    key=lambda item: item["fusion_score"],
+    reverse=True,
+     )
 
-    return results[:k]
+# Return (chunk, score) tuples for compatibility
+    return [
+    (
+        item["chunk"],
+        item["fusion_score"],
+    )
+    for item in results[:k]
+]
 
 
 if __name__ == "__main__":
@@ -271,8 +278,7 @@ if __name__ == "__main__":
 
             elif search_type == "hybrid":
 
-                fusion_score = result["fusion_score"]
-                chunk = result["chunk"]
+                chunk, fusion_score = result
 
                 if hasattr(chunk, "metadata"):
                     metadata = chunk.metadata

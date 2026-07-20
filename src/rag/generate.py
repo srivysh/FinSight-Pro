@@ -4,6 +4,7 @@ from typing import Any
 
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
+from src.config import GROQ_MODEL, GROQ_TEMPERATURE
 
 logger = logging.getLogger(__name__)
 
@@ -22,8 +23,8 @@ def get_llm() -> ChatGroq:
         )
 
     return ChatGroq(
-        model="llama-3.1-8b-instant",
-        temperature=0.1,
+        model=GROQ_MODEL,
+        temperature=GROQ_TEMPERATURE,
         groq_api_key=api_key,
     )
 

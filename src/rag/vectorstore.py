@@ -1,7 +1,7 @@
 import logging
 from pathlib import Path
 
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 
 from src.ingest.chunker import chunk_filing
 from src.rag.embeddings import get_embedder

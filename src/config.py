@@ -21,3 +21,10 @@ GROQ_TEMPERATURE = 0.1
 
 DEFAULT_HISTORY_PERIOD = "1mo"
 MARKET_CAP_DIVISOR = 1_000_000_000
+
+# ==========================
+# Analysis Configuration
+# ==========================
+
+ANALYSIS_TEMPERATURE = 0.2
+MAX_ANALYSIS_CHARS = 6000

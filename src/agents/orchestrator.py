@@ -33,7 +33,7 @@ logging.basicConfig(
 )
 
 
-def run_pipeline(query: str, ticker: str) -> dict:
+def run_pipeline(query: str, ticker: str, collection_name=None,) -> dict:
     """
     Execute the complete FinSight Pro pipeline.
 
@@ -60,6 +60,7 @@ def run_pipeline(query: str, ticker: str) -> dict:
     research = run_research(
         query=query,
         ticker=ticker,
+        collection_name=collection_name,
      )
 
     research_time = round(

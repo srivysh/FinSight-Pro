@@ -52,23 +52,38 @@ def build_vectorstore():
 
 VECTORSTORE = None
 
-def load_vectorstore():
+VECTORSTORES = {}
+
+
+def load_vectorstore(collection_name: str = None):
     """
-    Load the Chroma vector database only once.
+    Load a Chroma vector database only once.
+
+    Args:
+        collection_name: Optional Chroma collection name.
+                         If None, uses the default collection.
     """
 
-    global VECTORSTORE
+    global VECTORSTORES
 
-    if VECTORSTORE is None:
+    cache_key = collection_name or "default"
+
+    if cache_key not in VECTORSTORES:
 
         embedder = get_embedder()
 
-        VECTORSTORE = Chroma(
-            persist_directory=PERSIST_DIR,
-            embedding_function=embedder,
-        )
+        kwargs = {
+            "persist_directory": PERSIST_DIR,
+            "embedding_function": embedder,
+        }
 
-    return VECTORSTORE
+        if collection_name:
+            kwargs["collection_name"] = collection_name
+
+        VECTORSTORES[cache_key] = Chroma(**kwargs)
+
+    return VECTORSTORES[cache_key]
+
 if __name__ == "__main__":
 
     logging.basicConfig(

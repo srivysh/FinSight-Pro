@@ -165,6 +165,7 @@ def answer_question(
     ticker_filter: str | None = None,
     k: int = 8,
     retrieval_method: str = "vector",
+    collection_name: str | None = None,
     ) -> dict:
     """
     Retrieve relevant documents and generate a grounded answer.
@@ -201,6 +202,7 @@ def answer_question(
             query=question,
             ticker_filter=ticker_filter,
             k=k,
+            collection_name=collection_name,
         )
 
     elif retrieval_method == "hybrid":

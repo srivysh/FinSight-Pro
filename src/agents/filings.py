@@ -13,8 +13,9 @@ logger = logging.getLogger(__name__)
 def search_company_filings(
     question: str,
     ticker: str,
-    retrieval_method: str = "DEFAULT_RETRIEVAL_METHOD",
-    k: int = "DEFAULT_TOP_K",
+    retrieval_method: str = DEFAULT_RETRIEVAL_METHOD,
+    k: int = DEFAULT_TOP_K,
+    collection_name: str | None = None,
 ) -> dict[str, Any]:
     """
     Search SEC filings using the FinSight Pro RAG pipeline.
@@ -65,8 +66,9 @@ def search_company_filings(
         result = answer_question(
             question=question,
             ticker_filter=ticker,
-            retrieval_method=DEFAULT_RETRIEVAL_METHOD,
-            k=DEFAULT_TOP_K,
+            retrieval_method=retrieval_method,
+            k=k,
+            collection_name=collection_name,
         )
 
         return {

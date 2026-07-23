@@ -3,7 +3,7 @@ from src.rag.vectorstore import load_vectorstore
 DEFAULT_K = 5
 
 
-def search(query: str, k: int = DEFAULT_K, ticker_filter: str = None):
+def search(query: str, k: int = DEFAULT_K, ticker_filter: str = None, collection_name: str = None,):
     """
     Search the vector database using semantic similarity.
 
@@ -19,7 +19,7 @@ def search(query: str, k: int = DEFAULT_K, ticker_filter: str = None):
     if k <= 0:
         raise ValueError("k must be greater than 0.")
 
-    vs = load_vectorstore()
+    vs = load_vectorstore(collection_name=collection_name,)
 
     filter_dict = (
         {"ticker": ticker_filter}
@@ -51,7 +51,7 @@ if __name__ == "__main__":
         print(f"QUERY: {query}")
         print("=" * 80)
 
-        results = search(query, k=3)
+        results = search(query=query, k=3,ticker_filter="AAPL",)
 
         if not results:
             print("No matching chunks found.")

@@ -175,6 +175,7 @@ research_agent = create_agent(
 def run_research(
     query: str,
     ticker: str,
+    collection_name=None,
 ) -> str:
     """
     Run a financial research query using the FinSight Research Agent.
